@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="star/jquery.rateyo.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer.css" rel="stylesheet" />
+    <link href="css/qmp.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+
+</head>
+
+<body class="container fondo">
+    <div class="cabezera"></div>
+
+    <nav class="navbar navbar-default">
+
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">QMP</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!--<ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Ingresar</a></li>
+
+                </ul>-->
+                <form class="navbar-form navbar-right buscar" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Buscar peliculas ... :)" size="50">
+                    </div>
+                    <button type="submit" class="btn btn-default">Buscar</button>
+                </form>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <div class="col-md-9 fondoContenido">
+
+
+        <center>
+            <!--<a data-toggle="tab" href="#tendencia" class="buttonBase button5">Tendencias</a>
+            <a data-toggle="tab" href="#estrenos" class="buttonBase button5">Estrenose</a>-->
+
+            <ul class="nav nav-pills nav-pills-custom">
+                <li class="active active-custom"><a data-toggle="tab" href="#tendencia">Tendencia</a></li>
+                <li><a data-toggle="tab" href="#top">Mejores valorados</a></li>
+                <li><a data-toggle="tab" href="#estrenos">Estrenos</a></li>
+                <li><a data-toggle="tab" href="#proximamente">Proximamente</a></li>
+                <li><a data-toggle="tab" href="#proximamente">&Uacute;ltimas adicionadas</a></li>
+            </ul>
+
+
+        </center>
+        <!--<ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#tendencia">Tendencia</a></li>
+            <li><a data-toggle="tab" href="#estrenos">Estrenos</a></li>
+        </ul>-->
+        <div class="tab-content">
+            <br>
+            <div id="tendencia" class=" tab-pane fade in active ">
+
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/rDT86hJCxnoOs4ARjrCiRej7pOi.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Civil War<div id="c1" value="0" class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/k1QUCjNAkfRpWfm1dVJGUmVHzGv.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Deadpool<div class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/zSouWWrySXshPCT4t3UKCQGayyo.jpg" alt="...">
+                        <div class="caption">
+                            <h3>X-Men: Apocalypse<div class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/cGOPbv9wA5gEejkUN892JrveARt.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Bat vs Sup<div class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/vOipe2myi26UDwP978hsYOrnUWC.jpg" alt="...">
+                        <div class="caption">
+                            <h3>The Jungle Book<div class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/b77l5vmp6PYsc98LE6Uf1mXtmHh.jpg" alt="...">
+                        <div class="caption">
+                            <h3>The Huntsman<div class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div id="top" class=" tab-pane fade">
+
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/lIv1QinFqz4dlp5U4lQ6HaiskOZ.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Whiplash<div id="c1" value="0" class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/9O7gLzmreU0nGkIB6K3BsJbzvNv.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Redemption<div class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/d4KNaTrltq6bpkFS01pYtyXa09m.jpg" alt="...">
+                        <div class="caption">
+                            <h3>The Godfather <div class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/nBNZadXqJSdt05SHLqgT0HuC5Gm.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Interstellar<div class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/3TpMBcAYH4cxCw5WoRacWodMTCG.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Paperman<div class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/4mFsNQwbD0F237Tx7gAPotd0nbJ.jpg" alt="...">
+                        <div class="caption">
+                            <h3>The Intouchables<div class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+
+
+
+
+
+            </div>
+
+            <div id="estrenos" class="tab-pane fade">
+
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/rDT86hJCxnoOs4ARjrCiRej7pOi.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Civil War<div id="c1" value="0" class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/k1QUCjNAkfRpWfm1dVJGUmVHzGv.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Deadpool<div class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/zSouWWrySXshPCT4t3UKCQGayyo.jpg" alt="...">
+                        <div class="caption">
+                            <h3>X-Men: Apocalypse<div class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/cGOPbv9wA5gEejkUN892JrveARt.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Bat vs Sup<div class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/vOipe2myi26UDwP978hsYOrnUWC.jpg" alt="...">
+                        <div class="caption">
+                            <h3>The Jungle Book<div class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/b77l5vmp6PYsc98LE6Uf1mXtmHh.jpg" alt="...">
+                        <div class="caption">
+                            <h3>The Huntsman<div class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="proximamente" class=" tab-pane fade">
+
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/1EHKlvLk5kdBHLXir31DIXscSuZ.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Alice 2<div id="c1" value="0" class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/ckpiTY8MSnQf7C5eQUxZScRYLyI.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Warcraft<div class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/8yUeC25Ho8ZwwwtiYrfBzDkFcdk.jpg" alt="...">
+                        <div class="caption">
+                            <h3>The Conjuring 2<div class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/qqU0U29EtVo7I44zowxXBBf817u.jpg" alt="...">
+                        <div class="caption">
+                            <h3>The Neon Demon<div class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/y6tf2KSkKkd4ADvhVlyOunUiHcG.jpg" alt="...">
+                        <div class="caption">
+                            <h3>2 Lovers and a Bear<div class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-4 col-md-4">
+                    <a href="#" class="thumbnail movie">
+                        <img src="https://image.tmdb.org/t/p/w185/iCzrCEjnWhPw4fmPgO4cN6KEU8X.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Out of the Shadows<div class="rateyo-readonly-widg"></div></h3>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="col-md-3 columna-index-boostrap">
+        <div class="columna-index">
+
+            <form class="form-signin">
+                <label class="sr-only">username</label>
+                <input type="text" id="inputEmail" class="form-control" placeholder="username" required autofocus>
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <div class="checkbox">
+                    <!--<label>
+            <input type="checkbox" value="recordarme"> Recordarme
+          </label>-->
+                </div>
+                <button class="btn btn-lg btn-default btn-block" type="submit">Ingresar</button>
+            </form>
+            <hr>
+            <h3> Actividad del sitio </h3>
+            <a class="pagina_feed_item_a" href="#">
+                <div class="pagina_feed_item">
+
+                    <label> Usuario_F88 </label>
+                    <br>
+                    <table>
+                        <tr>
+                            <td>Ice Age 2:</td>
+                            <td>
+                                <div class="rateyo-readonly-widg"></div>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </a>
+            <a class="pagina_feed_item_a" href="#">
+                <div class="pagina_feed_item">
+
+                    <label> Usuario_K17 </label>
+                    <br>
+                    <table>
+                        <tr>
+                            <td>Matrix:</td>
+                            <td>
+                                <div class="rateyo-readonly-widg"></div>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </a>
+            <a class="pagina_feed_item_a" href="#">
+                <div class="pagina_feed_item">
+
+                    <label> Usuario_U77 </label>
+                    <br>
+                    <table>
+                        <tr>
+                            <td>Zootopia:</td>
+                            <td>
+                                <div class="rateyo-readonly-widg"></div>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </a>
+            <a class="pagina_feed_item_a" href="#">
+                <div class="pagina_feed_item">
+
+                    <label> Usuario_Q21 </label>
+                    <br>
+                    <table>
+                        <tr>
+                            <td>The Godfather:</td>
+                            <td>
+                                <div class="rateyo-readonly-widg"></div>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </a>
+            <a class="pagina_feed_item_a" href="#">
+                <div class="pagina_feed_item">
+
+                    <label> Usuario_G55 </label>
+                    <br>
+                    <table>
+                        <tr>
+                            <td>Interstellar:</td>
+                            <td>
+                                <div class="rateyo-readonly-widg"></div>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </a>
+            <a class="pagina_feed_item_a" href="#">
+                <div class="pagina_feed_item">
+
+                    <label> Usuario_E31 </label>
+                    <br>
+                    <table>
+                        <tr>
+                            <td>Buscando a Nemo:</td>
+                            <td>
+                                <div class="rateyo-readonly-widg"></div>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </a>
+            <a class="pagina_feed_item_a" href="#">
+                <div class="pagina_feed_item">
+
+                    <label> Usuario_L64 </label>
+                    <br>
+                    <table>
+                        <tr>
+                            <td>Madagascar 3:</td>
+                            <td>
+                                <div class="rateyo-readonly-widg"></div>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </a>
+
+
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="col-md-9 footerQMP">
+        <label>Copyright QMP &copy; 2016 Website by TinkerSoft</label>
+    </div>
+
+    <!-- <script type="text/javascript" src="star/jquery.min.js"></script>-->
+    <script type="text/javascript" src="star/jquery.rateyo.min.js"></script>
+
+    <script>
+        $(function() {
+
+            var rating = 3;
+
+
+            $("#c1").click(function() {
+                rating=0;
+                alert($("#c1").val());
+            });
+            $(".counter").text(rating);
+
+
+
+            $(".rateyo-readonly-widg").rateYo({
+                readOnly: false,
+                rating: rating,
+                numStars: 10,
+                precision: 10,
+                minValue: 1,
+                maxValue: 5
+            }).on("rateyo.change", function(e, data) {
+                $("#c1").val(data.rating);
+
+            });
+        });
+    </script>
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
